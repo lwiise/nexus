@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1620" viewBox="0 0 1080 1620">
+  <defs>
+    <radialGradient id="crowdGlowP" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#e8f4ff" stop-opacity="0.5"/>
+      <stop offset="35%" stop-color="#9fb8cc" stop-opacity="0.25"/>
+      <stop offset="70%" stop-color="#20344a" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlowP" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a6cd6" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#123f8a" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dotFadeP" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="22%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <mask id="dotMaskP">
+      <rect width="1080" height="1620" fill="url(#dotFadeP)"/>
+    </mask>
+    <pattern id="halftoneP" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="7" r="2.4" fill="#cfe0ee"/>
+    </pattern>
+    <filter id="neonP" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <g id="xmarkP">
+      <path d="M0 2.5 L6 8.5 L0 14.5 M14.5 2.5 L8.5 8.5 L14.5 14.5" fill="none" stroke="#38c6f4" stroke-width="3.5"/>
+    </g>
+  </defs>
+
+  <!-- base -->
+  <rect width="1080" height="1620" fill="#030507"/>
+
+  <!-- crowd suggestion, top -->
+  <g>
+    <ellipse cx="820" cy="180" rx="420" ry="260" fill="url(#crowdGlowP)"/>
+    <ellipse cx="920" cy="1350" rx="320" ry="380" fill="url(#blueGlowP)"/>
+    <rect width="1080" height="1620" fill="url(#halftoneP)" mask="url(#dotMaskP)" opacity="0.14"/>
+  </g>
+
+  <!-- neon diagonal linework -->
+  <g stroke-linecap="square" fill="none">
+    <g filter="url(#neonP)" stroke="#2fbdf0">
+      <path d="M-60 60 L360 480" stroke-width="4.5"/>
+      <path d="M-60 -20 L420 460" stroke-width="2.5" opacity="0.9"/>
+      <path d="M30 -60 L330 240" stroke-width="6"/>
+      <path d="M120 -60 L300 120" stroke-width="2.5" opacity="0.8"/>
+    </g>
+    <g stroke="#123a5e">
+      <path d="M-60 150 L320 530" stroke-width="9" opacity="0.8"/>
+      <path d="M260 -60 L470 150" stroke-width="7" opacity="0.7"/>
+    </g>
+    <g stroke="#2fbdf0" filter="url(#neonP)" opacity="0.85">
+      <path d="M40 1330 L150 1440 L40 1550" stroke-width="5"/>
+      <path d="M100 1330 L210 1440 L100 1550" stroke-width="3" opacity="0.8"/>
+    </g>
+    <g stroke="#123a5e" opacity="0.7">
+      <path d="M160 1330 L270 1440 L160 1550" stroke-width="7"/>
+    </g>
+  </g>
+
+  <!-- title block -->
+  <g fill="#ffffff" font-family="'Archivo Black','Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900">
+    <text x="80" y="300" font-size="150" letter-spacing="2">NEXUS</text>
+    <text x="80" y="445" font-size="150" letter-spacing="2">2026</text>
+    <text x="82" y="540" font-size="46" letter-spacing="1">21 WORLD-CLASS DJS</text>
+  </g>
+
+  <!-- lineup columns -->
+  <g fill="#ffffff" font-family="'Archivo Black','Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="28">
+    <g>
+      <use href="#xmarkP" x="82" y="633"/><text x="122" y="648">ANTHO DECKS</text>
+      <use href="#xmarkP" x="82" y="691"/><text x="122" y="706">BEN RODD</text>
+      <use href="#xmarkP" x="82" y="749"/><text x="122" y="764">MIDIO</text>
+      <use href="#xmarkP" x="82" y="807"/><text x="122" y="822">LUCAS BRANCO</text>
+      <use href="#xmarkP" x="82" y="865"/><text x="122" y="880">BOBBYYNAY</text>
+      <use href="#xmarkP" x="82" y="923"/><text x="122" y="938">AMORFIA</text>
+      <use href="#xmarkP" x="82" y="981"/><text x="122" y="996">DEVI</text>
+      <use href="#xmarkP" x="82" y="1039"/><text x="122" y="1054">YUKO</text>
+      <use href="#xmarkP" x="82" y="1097"/><text x="122" y="1112">ROBERTO FERRARO</text>
+      <use href="#xmarkP" x="82" y="1155"/><text x="122" y="1170">GENJI YOSHIDA</text>
+    </g>
+    <g>
+      <use href="#xmarkP" x="570" y="633"/><text x="610" y="648">ANABEL SIGEL</text>
+      <use href="#xmarkP" x="570" y="691"/><text x="610" y="706">MENDO</text>
+      <use href="#xmarkP" x="570" y="749"/><text x="610" y="764">ALMA HOSCH</text>
+      <use href="#xmarkP" x="570" y="807"/><text x="610" y="822">DELTECH</text>
+      <use href="#xmarkP" x="570" y="865"/><text x="610" y="880">TORNADOTONI</text>
+      <use href="#xmarkP" x="570" y="923"/><text x="610" y="938">XHORXHO</text>
+      <use href="#xmarkP" x="570" y="981"/><text x="610" y="996">DJAZZ</text>
+      <use href="#xmarkP" x="570" y="1039"/><text x="610" y="1054">DEEETRO</text>
+      <use href="#xmarkP" x="570" y="1097"/><text x="610" y="1112">ARMIR BASHOTA</text>
+      <use href="#xmarkP" x="570" y="1155"/><text x="610" y="1170">FEVZEE</text>
+      <use href="#xmarkP" x="570" y="1213"/><text x="610" y="1228">LEDION</text>
+    </g>
+  </g>
+
+  <!-- footer block -->
+  <g fill="#ffffff">
+    <text x="82" y="1400" font-size="30" font-weight="600" font-family="'Geist','Helvetica Neue',Arial,sans-serif">Nexus experiences</text>
+    <text x="430" y="1400" font-size="30" font-weight="600" font-family="'Geist','Helvetica Neue',Arial,sans-serif">Kosove, Viti</text>
+    <text x="78" y="1490" font-size="64" font-weight="800" font-family="'Archivo Black','Arial Black','Helvetica Neue',Arial,sans-serif">23-24-25 JULY</text>
+  </g>
+</svg>
